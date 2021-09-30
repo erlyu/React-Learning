@@ -6,10 +6,7 @@ import PropTypes from 'prop-types'
 import Button from './Button';
 // const xvar = false
 
-const Header = (props) => {
-    const onClick = () =>{
-        console.log('Anxiety is being reduced')
-    }
+const Header = ({onClick}) => {
     return (
         // this is making of a component!
         <header className='header'>

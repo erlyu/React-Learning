@@ -1,27 +1,12 @@
 // hook calls useState
-// import { useState } from "react"
-const tasks = [
-    {
-        id: 1,
-        text: 'take deep breaths',
-        day: 'everyday',
-        reminder: true,
-    },
-    {
-        id: 2,
-        text: 'drink some water',
-        day: 'every 2 hours',
-        reminder: true,
-    },
-    {
-        id: 3,
-        text: 'relax my friend',
-        day: '24/7, homie got ur back',
-        reminder: true,
-    },
-]
 
-const Tasks = () => {
+
+const Tasks = ({tasks}) => {
+    // const [a, setA] = useState(false);
+    // a = var name
+    // setA = setter, used to modify var
+    // useState = identifies state of the object, this is the essence of the hook
+
     return (
         <>
         {tasks.map((task) =>
